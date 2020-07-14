@@ -11,9 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
   </head>
-
   <body>
-
     <div class="header" id="header">
       <nav class="navbar navbar-main navbar-shadow" role="navigation" id="slide-nav">
         <div class="container relative">
@@ -40,7 +38,7 @@
                   </li>
                     <li class="">
         <!-- ↓以下のコードは、5章で正しいroutingに書き直します。 -->
-                      <%= link_to 'マイページ', "#" %>
+                      <%= link_to 'マイページ', user_path(current_user.id) %>
                     </li>
                      <% else %>
                        <li class="">
